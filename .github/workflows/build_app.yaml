@@ -32,7 +32,7 @@ jobs:
         CODE_SIGN_IDENTITY=""
         CODE_SIGNING_REQUIRED=NO
         CODE_SIGNING_ALLOWED=NO
-        -sdk macosx \
+        -sdk macosx26.2 \
         -derivedDataPath "build" \
         ARCHS="arm64 x86_64" \
         ONLY_ACTIVE_ARCH=NO \
