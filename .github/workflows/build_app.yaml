@@ -17,13 +17,14 @@ env:
 
 jobs:   
   build-macos:
-    runs-on: macos-latest
+    runs-on: macos-26
     
     steps:
     - uses: actions/checkout@v4
 
     - name: xcodebuild
       run: |
+        sudo xcode-select -s /Applications/Xcode_26.2.app
         xcodebuild \
         -scheme "BrightIntosh" \
         -project "BrightIntosh.xcodeproj" \
